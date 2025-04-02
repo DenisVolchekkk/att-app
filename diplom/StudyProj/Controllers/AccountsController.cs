@@ -48,7 +48,7 @@ namespace StudyProj.Controllers
 
             var callback = QueryHelpers.AddQueryString(userForResitration.ClientUri!, param);
 
-            var message = new Message([user.Email], "Токен для принятия почты", callback, null);
+            var message = new Message([user.Email], "Token to confirm email", callback, null);
 
             await _emailSender.SendEmailAsync(message);
 
@@ -61,12 +61,12 @@ namespace StudyProj.Controllers
         {
             var user =  await _userManager.FindByEmailAsync(email);
             if (user is null)
-                return BadRequest("Ошибка подтверждения почты");
+                return BadRequest("Error email confirm");
             var originalToken = Uri.UnescapeDataString(token!);
             var confirmResult = await _userManager.ConfirmEmailAsync(user, originalToken);
             if (!confirmResult.Succeeded)
-                return BadRequest("Ошибка подтверждения почты");
-            return Ok("Теперь вы можете автовизироваться");
+                return BadRequest("Error email confirm");
+            return Ok("Now you can autorize");
         }
 
         [HttpPost("authenticate")]
@@ -77,9 +77,9 @@ namespace StudyProj.Controllers
                 return BadRequest("Ошибка запроса");
 
             if (!await _userManager.IsEmailConfirmedAsync(user))
-                return Unauthorized(new AuthResponseDto { ErrorMessage = "Подтвердите почту" });
+                return Unauthorized(new AuthResponseDto { ErrorMessage = "Confirm email" });
             if (!await _userManager.CheckPasswordAsync(user, userForAuthentication.Password!))
-                return Unauthorized(new AuthResponseDto { ErrorMessage = "Ошибка аутентификации" });
+                return Unauthorized(new AuthResponseDto { ErrorMessage = "Autentication error" });
 
             var roles = await _userManager.GetRolesAsync(user);
             var token = _jwtHandler.CreateToken(user,roles);

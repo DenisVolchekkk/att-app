@@ -140,7 +140,7 @@ namespace TestProject1
             _mockUserManager.Verify(x => x.AddToRoleAsync(user, "Chief"), Times.Once);
             _mockEmailSender.Verify(x => x.SendEmailAsync(It.Is<Message>(m =>
                 m.To.Any(t => t.Address == userDto.Email) &&
-                m.Subject == "Токен для принятия почты" &&
+                m.Subject == "Token to confirm email" &&
                 m.Content.Contains(token))), Times.Once);
         }
 
@@ -159,7 +159,7 @@ namespace TestProject1
 
             // Assert
             var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
-            Assert.Equal("Ошибка подтверждения почты", badRequestResult.Value);
+            Assert.Equal("Error email confirm", badRequestResult.Value);
         }
 
         [Fact]
@@ -180,7 +180,7 @@ namespace TestProject1
 
             // Assert
             var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
-            Assert.Equal("Ошибка подтверждения почты", badRequestResult.Value);
+            Assert.Equal("Error email confirm", badRequestResult.Value);
         }
 
         [Fact]
@@ -201,7 +201,7 @@ namespace TestProject1
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
-            Assert.Equal("Теперь вы можете автовизироваться", okResult.Value);
+            Assert.Equal("Now you can autorize", okResult.Value);
         }
 
         [Fact]
@@ -255,7 +255,7 @@ namespace TestProject1
             // Assert
             var unauthorizedResult = Assert.IsType<UnauthorizedObjectResult>(result);
             var response = Assert.IsType<AuthResponseDto>(unauthorizedResult.Value);
-            Assert.Equal("Подтвердите почту", response.ErrorMessage);
+            Assert.Equal("Confirm email", response.ErrorMessage);
         }
 
         [Fact]
@@ -275,7 +275,7 @@ namespace TestProject1
             // Assert
             var unauthorizedResult = Assert.IsType<UnauthorizedObjectResult>(result);
             var response = Assert.IsType<AuthResponseDto>(unauthorizedResult.Value);
-            Assert.Equal("Ошибка аутентификации", response.ErrorMessage);
+            Assert.Equal("Autentication error", response.ErrorMessage);
         }
 
         [Fact]

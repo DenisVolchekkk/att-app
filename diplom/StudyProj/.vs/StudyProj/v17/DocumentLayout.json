@@ -6,6 +6,10 @@
       "AbsoluteMoniker": "D:0:0:{D896EC2E-3A7B-43F0-9045-2711817CCAE8}|..\\TestProject1\\TestProject1.csproj|e:\\diplom\\diplom\\testproject1\\accountscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{57CE6BBC-7A08-4761-A7E6-CB5302A0415D}|StudyProj.csproj|e:\\diplom\\diplom\\studyproj\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57CE6BBC-7A08-4761-A7E6-CB5302A0415D}|StudyProj.csproj|solutionrelative:controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{57CE6BBC-7A08-4761-A7E6-CB5302A0415D}|StudyProj.csproj|e:\\diplom\\diplom\\studyproj\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57CE6BBC-7A08-4761-A7E6-CB5302A0415D}|StudyProj.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,10 +19,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{D896EC2E-3A7B-43F0-9045-2711817CCAE8}|..\\TestProject1\\TestProject1.csproj|e:\\diplom\\diplom\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57CE6BBC-7A08-4761-A7E6-CB5302A0415D}|StudyProj.csproj|e:\\diplom\\diplom\\studyproj\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57CE6BBC-7A08-4761-A7E6-CB5302A0415D}|StudyProj.csproj|solutionrelative:controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D896EC2E-3A7B-43F0-9045-2711817CCAE8}|..\\TestProject1\\TestProject1.csproj|e:\\diplom\\diplom\\testproject1\\groupcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -455,26 +455,27 @@
               "RelativeDocumentMoniker": "..\\TestProject1\\AccountsControllerTests.cs",
               "ToolTip": "E:\\diplom\\diplom\\TestProject1\\AccountsControllerTests.cs",
               "RelativeToolTip": "..\\TestProject1\\AccountsControllerTests.cs",
-              "ViewState": "AQIAALsAAAAAAAAAAAAwwMsAAAA2AAAA",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAIwBABAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T11:10:56.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AccountsController.cs",
               "DocumentMoniker": "E:\\diplom\\diplom\\StudyProj\\Controllers\\AccountsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountsController.cs",
               "ToolTip": "E:\\diplom\\diplom\\StudyProj\\Controllers\\AccountsController.cs",
               "RelativeToolTip": "Controllers\\AccountsController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAgwBsAAABXAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAnwFEAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T17:56:54.58Z"
+              "WhenOpened": "2025-03-16T17:56:54.58Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudyProj.csproj",
               "DocumentMoniker": "E:\\diplom\\diplom\\StudyProj\\StudyProj.csproj",
               "RelativeDocumentMoniker": "StudyProj.csproj",
@@ -486,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsersController.cs",
               "DocumentMoniker": "E:\\diplom\\diplom\\StudyProj\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
@@ -498,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TestProject1.csproj",
               "DocumentMoniker": "E:\\diplom\\diplom\\TestProject1\\TestProject1.csproj",
               "RelativeDocumentMoniker": "..\\TestProject1\\TestProject1.csproj",
